@@ -83,39 +83,39 @@ console.log(yearsUntilRetirement(1991, 'shivi'));
 console.log(yearsUntilRetirement(1980, 'megha'));
 */
 
-// // //****FUNCTIONS CALLING OTHER FUNCTIONS****
+// FUNCTIONS CALLING OTHER FUNCTIONS
+/*
+function cutFruitPieces(fruit) {
+    return fruit * 4;
+}
+function fruitProcessor(apples, oranges) {
+    const applePieces = cutFruitPieces(apples);
+    const orangePieces = cutFruitPieces(oranges);
+    const juice = `Juice with ${applesPieces} piece of aaple and ${orangesPieces} pieces of oranges.`;
+    return juice;
+}
+console.log(fruitProcessor(2,3));
+*/
+// REVIEWING FUNCTIONS
 
-// // function cutFruitPieces(fruit) {
-// //     return fruit * 4;
-// // }
-// // function fruitProcessor(apples, oranges) {
-// //     const applePieces = cutFruitPieces(apples);
-// //     const orangePieces = cutFruitPieces(oranges);
-// //     const juice = `Juice with ${apples} apples and ${oranges} oranges.`;
-// //     return juice;
-// // }
-// // console.log(fruitProcessor(2,3));
+const calcAge = function(birthYear) {
+    return 2037 - birthYear;
+}
 
-// // //*****REVIEWING FUNCTIONS*****
+const YearsUntilRetirement = function(birthYear, firstName) {
+    const age = calcAge(birthYear);
+    const retirement = 65 - age;
 
-// // const calcAge = function(birthYear) {
-// //     return 2025 - birthYear;
-// // }
-
-// // const YearsUntilRetirement = function(birthYear, firstName) {
-// //     const age = calcAge(birthYear);
-// //     const retirement = 65 - age;
-
-// //     if (retirement > 0){
-// //         console.log(`${firstName} retires in ${retirement} years`);
-// //         return retirement;
-// //     }else{
-// //         return -1;
-// //         console.log(`${firstName} has already retired`);
-// //     }
-// // }
-// // yearsUntilRetirement(2005, 'Nawaz');
-// // yearsUntilRetirement(2000, 'Sabbo');
+    if (retirement > 0){
+        console.log(`${firstName} retires in ${retirement} years`);
+        return retirement;
+    }else{
+        console.log(`${firstName} has already retired`);
+        return -1;
+    }
+}
+yearsUntilRetirement(1991, 'Shivi');
+yearsUntilRetirement(1950, 'Megha');
 
 // // //******Challenges 01********
 
