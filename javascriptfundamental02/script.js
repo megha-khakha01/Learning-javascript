@@ -98,7 +98,7 @@ console.log(fruitProcessor(2,3));
 */
 // REVIEWING FUNCTIONS
 
-const calcAge = function(birthYear) {
+/*const calcAge = function(birthYear) {
     return 2037 - birthYear;
 }
 
@@ -116,6 +116,7 @@ const YearsUntilRetirement = function(birthYear, firstName) {
 }
 yearsUntilRetirement(1991, 'Shivi');
 yearsUntilRetirement(1950, 'Megha');
+*/
 
 // // //******Challenges 01********
 
