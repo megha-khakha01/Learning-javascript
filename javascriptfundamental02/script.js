@@ -35,13 +35,13 @@ function fruitProcessor(apples, oranges) {
  const appleOrangeJuice = fruitProcessor(2,4);
 console.log(appleOrangeJuice);*/
 
-// // // ********FUNCTION DECLARATION********
+// function declarations vs expressions
 
-// // const age_1 = calcAge1(2003);
+/* function calcAge1(birthYear) {
+ return 2025 - birthYear;
+/ }
+const Age1 = calcAge1(1991);*/
 
-// // function calcAge1(birthYear) {
-// //     return 2025 - birthYear;
-// // }
 
 // // //Function expression
 
