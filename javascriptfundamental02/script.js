@@ -45,6 +45,7 @@ console.log(appleOrangeJuice);*/
 // function declarations vs expressions
 
 
+
 //function declaration
 
 
@@ -67,6 +68,7 @@ console.log(age1, age2);
 //ARROW FUNCTIONS
 
 
+
 /*
 const calcAge3 = birthYear => 2037 - birthYear;
 const Age3 = calcAge3(1991);
@@ -83,7 +85,13 @@ console.log(yearsUntilRetirement(1991, 'shivi'));
 console.log(yearsUntilRetirement(1980, 'megha'));
 */
 
+
+
+
 // FUNCTIONS CALLING OTHER FUNCTIONS
+
+
+
 /*
 function cutFruitPieces(fruit) {
     return fruit * 4;
@@ -96,7 +104,12 @@ function fruitProcessor(apples, oranges) {
 }
 console.log(fruitProcessor(2,3));
 */
+
+
+
 // REVIEWING FUNCTIONS
+
+
 
 /*const calcAge = function(birthYear) {
     return 2037 - birthYear;
@@ -118,113 +131,33 @@ yearsUntilRetirement(1991, 'Shivi');
 yearsUntilRetirement(1950, 'Megha');
 */
 
-// // //******Challenges 01********
+// Coding challenge
 
-// // const calcAverage = (a, b, c) => (a + b + c) / 3;
-// // console.log(calcAverage(3, 4, 5));
+const calcAverage = (a, b, c) => (a + b + c) / 3;
+console.log(calcAverage(3, 4, 5));
 
-// // // Test 1
+// Test 1
 
-// // let scoreDolphins = calcAverage(44, 23, 71);
-// // let scoreKoalas = calcAverage(65, 54, 49);
-// // console.log(scoreDolphins, scoreKoalas);
+let scoreDolphins = calcAverage(44, 23, 71);
+let scoreKoalas = calcAverage(65, 54, 49);
+console.log(scoreDolphins, scoreKoalas);
 
-// // const checkWinner = function (avgDolphins, avgKoalas) {
-// //   if (avgDolphins >= 2 * avgKoalas) {
-// //     console.log(`Dolphins win (${avgDolphins} vs. ${avgKoalas})`);
-// //   } else if (avgKoalas >= 2 * avgDolphins) {
-// //     console.log(`Koalas win (${avgKoalas} vs. ${avgDolphins})`);
-// //   } else {
-// //     console.log('No team wins...');
-// //   }
-// // }
-// // checkWinner(scoreDolphins, scoreKoalas);
-
-// // checkWinner(543, 111);
-
-// // // Test 2
-
-// // scoreDolphins = calcAverage(85, 54, 41);
-// // scoreKoalas = calcAverage(23, 34, 27);
-// // console.log(scoreDolphins, scoreKoalas);
-// // checkWinner(scoreDolphins, scoreKoalas);
-
-// // ********ARRAY************
-
-// const friend1 ='Michael';
-// const friend2 = 'Steven';
-// const friend3 = 'Peter';
-
-// const friends = ['Michael','Steven','Peter'];
-// console.log(friends);
-
-// const year = new Array(1991, 1984, 2003, 2025);
-
-// console.log(friends[0]);
-// console.log(friends[2]);
-
-// console.log(friends.lenght);
-// console.log(friends[friends.lenght - 1]);
-
-// friends[2] = 'Jay';
-// console.log(friends); 
-
-// ________Exercise__________
-
-const calcAge = function (birthYear) {
-    return 2025-2000;
+const checkWinner = function (avgDolphins, avgKoalas) {
+  if (avgDolphins >= 2 * avgKoalas) {
+    console.log(`Dolphins win (${avgDolphins} vs. ${avgKoalas})`);
+  } else if (avgKoalas >= 2 * avgDolphins) {
+    console.log(`Koalas win (${avgKoalas} vs. ${avgDolphins})`);
+  } else {
+    console.log('No team wins...');
+  }
 }
+checkWinner(scoreDolphins, scoreKoalas);
 
-const year = [1991, 1996, 2000, 2003, 2015] ;
-
-const age1 = calcAge(year[0]);
-const age2 = calcAge(year[1]);
-const age3 = calcAge(year[year.length -1]);
-console.log(age1, age2, age3);
-const age = [calcAge(year[0]), calcAge(year[1]), calcAge(year[year.length -1])];
-console.log(age);
+checkWinner(543, 111);
 
 
-// ----------Add elements----------
-
-const friends = ['Nawaz', 'Vikky', 'Aarya'];
-const newLength = friends.push('Chikki-Farhan');
-console.log(friends);
-console.log(newLength);
-
-friends.unshift('Kaaju');
-console.log(friends);
-
-// --------Remove elements---------
-
-friends.pop(); //last
-const popped = friends.pop();
-console.log(popped);
-console.log(friends);
-
-friends.shift(friends.indexOf('Kaaju'));
-friends.shift(friends.indexOf('Bob'));
-
-friends.push(23);
-console.log(friends.includes('Kaaju'));
-console.log(friends.includes('Bob'));
-console.log(friends.includes('23'));
-
-if (friends.includes('Chikki-farhan')) {
-    console.log('You have a friend called Chikki');
-}
-
- 
-
-// __________Challanges 02_________
-
-const calcTip = function (bill) {
-  return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
-}
-// const calcTip = bill => bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
-
-const bills = [150, 555, 44];
-const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
-const totals = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
-
-console.log(bills, tips, totals);
+//Test 2
+scoreDolphins = calcAverage(85 , 54, 41);
+scoreKoalas = calcAverage(23 , 34 , 27);
+console.log(scoreDolphins, scoreKoalas);
+checkWinner(scoreDolphins, scoreKoalas);
