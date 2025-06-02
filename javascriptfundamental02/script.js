@@ -1,4 +1,6 @@
 //  Activating Strict mode
+
+
 /*
 let hasDriveringLicence = false;
  const passTest = true;
@@ -13,6 +15,8 @@ const private = 534;
 
 
 // Functions
+
+
 /*
 function logger(){
 console.log('My name is shivi');
@@ -35,21 +39,31 @@ function fruitProcessor(apples, oranges) {
  const appleOrangeJuice = fruitProcessor(2,4);
 console.log(appleOrangeJuice);*/
 
+
+
+
 // function declarations vs expressions
 
+
+//function declaration
+
+
 /* function calcAge1(birthYear) {
- return 2025 - birthYear;
+ return 2037 - birthYear;
 / }
 const Age1 = calcAge1(1991);*/
 
 
-// // //Function expression
+//Function expression
+/*
+ const calcAge2 = function (birthYear) {
+ return 2037 - birthYear;
+}
+const age2 = calcAge2(1991);
+console.log(age1, age2);
+*/
 
-// // const calcAge_2 = function (birthYear) {
-// //     return 2025 - birthYear
-// // }
-// // const age_2 = calcAge_2(2003);
-// // console.log(age_1, age_2);
+
 
 // // // *******FUNCTION DECLARATION*********
 // // const age1 = calcAge1(2003);
