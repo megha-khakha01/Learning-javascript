@@ -64,36 +64,24 @@ console.log(age1, age2);
 */
 
 
+//ARROW FUNCTIONS
 
-// // // *******FUNCTION DECLARATION*********
-// // const age1 = calcAge1(2003);
 
-// // function calcAge1(birthYear) {
-// //     return 2025 - birthYear;
-// // }
+/*
+const calcAge3 = birthYear => 2037 - birthYear;
+const Age3 = calcAge3(1991);
+console.log(age3);
 
-// // //function expression
-// // const calcAge2 = function (birthYear) {
-// //     return 2025 - birthYear
-// // }
-// // const age2 = calcAge2(2003);
-// // console.log(age1, age2);
+const yearsUntilRetirement = (birthYear, firstName) => {
+    const age = 2037- birthYear;
+    const retirement = 65 - age;
+   // return retirement;
+   return `${firstName} retires in ${retirement} years`;
+}
 
-// // //******ARROW FUNCTIONS********
-
-// // const calcAge3 = birthYear => 2025 - birthYear;
-// // const age3 = calcAge3(2003);
-// // console.log(age3);
-
-// // const yearsUntilRetirement = (birthYear, firstName) => {
-// //     const age = 2025 - birthYear;
-// //     const retirement = 65 - age;
-// //    // return retirement;
-// //    return `${firstName} retires in ${retirement} years`;
-// // }
-
-// // console.log(yearsUntilRetirement(2003, 'Nawaz'));
-// // console.log(yearsUntilRetirement(2000, 'Sabbo'));
+console.log(yearsUntilRetirement(1991, 'shivi'));
+console.log(yearsUntilRetirement(1980, 'megha'));
+*/
 
 // // //****FUNCTIONS CALLING OTHER FUNCTIONS****
 
