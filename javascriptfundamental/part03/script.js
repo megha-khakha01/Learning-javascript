@@ -1,5 +1,5 @@
 /*switch (day) {
-  case 'monda': // day === 'monday'
+  case 'monday': // day === 'monday'
     console.log('Plan course structure');
     console.log('Go to coding meetup');
     break;
