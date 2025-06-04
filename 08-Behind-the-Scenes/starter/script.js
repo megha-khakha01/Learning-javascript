@@ -76,38 +76,38 @@ function addDec(a,b) {
 
 
 
- console.log(title);
+ console.log(this);
  constcalcAge = function (birthYear) {
     console.log(2037 - birthYear);
     console.log(this);
  };
  calcAge(1991);
 
- const calcAgeArrow = birthYear => {
+ const calcAgeArrow = function( birthYear) =>{
     console.log(2037 - birthYear);
     console.log(this);
  };
  
  calcAgeArrow(1980);
 
- const adii = {
+ const Shivi = {
     year : 1991;
     calcAge: function() {
         console.log(this);
         console.log(2037 - this.year ;)
     },
  };
- adii.calacAge();
+ Shivi.calacAge();
  
 
- const shanaya = {
+ const megha = {
     year : 2017,
  };
 
- shanaya.calcAge = adii.calcAge;
- shanaya.calacAge();
+ megha.calcAge = shivi.calcAge;
+ megha.calacAge();
 
- const f = adii.calacAge;
+ const f = shivi.calacAge;
  f();
 
 
