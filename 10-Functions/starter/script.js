@@ -29,36 +29,36 @@
 
 
 
-const flight = 'LH234';
-const Anshu = {
-    name: 'Jonas Schmedtmann',
-    passport: 1234567890,
-}
+// const flight = 'LH234';
+// const Anshu = {
+//     name: 'Jonas Schmedtmann',
+//     passport: 1234567890,
+// }
 
-const checkIn = function(flightNum, passenger) {
-    flightNum = 'LH999';
-    passenger.name = 'Mrs.' + passenger.name;
+// const checkIn = function(flightNum, passenger) {
+//     flightNum = 'LH999';
+//     passenger.name = 'Mrs.' + passenger.name;
 
-    if(passenger.passport === 24739479284) {
-        alert('Checked in');
-    }else{
-        alert('Wrong passport');
-    }
-};
+//     if(passenger.passport === 24739479284) {
+//         alert('Checked in');
+//     }else{
+//         alert('Wrong passport');
+//     }
+// };
 
-//checkIn(flight, jonas);
-//console.log(flight);
-//console.log(jonas);
+// //checkIn(flight, jonas);
+// //console.log(flight);
+// //console.log(jonas);
 
-// Is the same as doing....
-//const flightNum = flight;
-//const passenger = jonas;
+// // Is the same as doing....
+// //const flightNum = flight;
+// //const passenger = jonas;
 
-const newPassport = function(person) {
-    person.passport = Math.trunc(Math.random() * 100000000000);
-}
+// const newPassport = function(person) {
+//     person.passport = Math.trunc(Math.random() * 100000000000);
+// }
 
-newPassport(jonas) ;
-checkIn(flight, jonas);
+// newPassport(jonas) ;
+// checkIn(flight, jonas);
 
 
