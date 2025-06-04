@@ -19,7 +19,7 @@
 
 const secretnumber = Math.trunc(Math.random()*20) +1;
 let const score = 20;
-document.querySelector('.number').textContent = number;
+let highscore = 0;
 
 document.querySelector('.check').addEventListener
 ('click' , funtion() {
@@ -31,6 +31,18 @@ document.querySelector('.check').addEventListener
         // when players wins
     } else if (guess === secretnumber){
         document.querySelector('.message').textContext =  'Correct Number!';
+        document.querySelector('.number').textContent = secretNumbernumber;
+
+        document.querySelector('body').style.
+        backgroundColor = '#60b347';
+
+        document.querySelector('.number').style.width = '30rem'
+
+        if(score> highscore){
+            highscore = score;
+            document.querySelector('.highscore').
+            textContent = highscore;
+        }
         // when guess is too high
     }else if (guess > secretnumber){
         if( score > 1 ){
@@ -52,8 +64,18 @@ document.querySelector('.check').addEventListener
         }
     }
 });
-                                         //** challenge - 1 ***//
+      // Coding challenge //
+document.querySelector('.again').addEventListener('click', function ( {
+    score = 20;
+    secretNumber = Math.trunc (Math.random() *20) + 1;
 
+    document.querySelector('.message').textContent = 'Start guessing....';
+    document.querySelector('.score').textContent = 'score';
+     document.querySelector('.number').textContent = '?';
+      document.querySelector('.guess').textContent = '';
+       document.querySelector('.body').textContent = '#222';
+        document.querySelector('.number').textContent = '15rem';
+});
 
     let secretNumber = Math.trunc(Math.random() * 20 ) + 1;
     let scroe = 20;
