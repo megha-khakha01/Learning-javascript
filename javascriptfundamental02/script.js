@@ -199,7 +199,7 @@ checkWinner(scoreDolphins, scoreKoalas);*/
       // //console.log1(jonas['calcAge'](1991));
 
 
-      // //Challenge
+      //   Challenge  //
       // // "Jonas is a 46-year old teacher , and he has a driver's license"
 
       // console.log(jonas.getSummary());
@@ -207,3 +207,39 @@ checkWinner(scoreDolphins, scoreKoalas);*/
 
       //  Coding Challenge  //
       
+      // const mark = {
+      //   fullName: 'Maek Miller',
+      //   mass: 78,
+      //   height: 1.69,
+      //   calcBMI: function(){
+      //     this.bmi = this.mass / this.height ** 2;
+      //     return this.bmi;
+      //   }
+      // };
+
+
+      // const john = {
+      //   fullName: 'John Smith',
+      //   mass: 92,
+      //   height: 1.95
+      //   calcBMI: function(){
+      //     this.bmi = this.mass / this.height ** 2;
+      //     return this.bmi;
+      // };
+
+      // mark.calcBMI();
+      // john.calBMI();
+
+
+      // console.log(mark.bmi, john.bmi);
+
+      // // "John Smith's BMI (28.3) is higher than Mark Miller's (23.9)!"
+
+      // if(mark.bmi > john.bmi) {
+      //   console.log ('$(mark.fulName}'s BMI (${mark.BMI}') is higher than ${john.fulName}'s BMI (${john.BMI})')
+      // } else if (john.bmi > mark.bmi) {
+      //   console.log ('${john.fulName}'s BMI (${john.BMI}) is higher than $(mark.fulName)'s BMI (${mark.BMI})')
+      // }
+
+
+
