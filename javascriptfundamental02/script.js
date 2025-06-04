@@ -172,8 +172,26 @@ checkWinner(scoreDolphins, scoreKoalas);*/
         friends: ['Michael', 'Pete', 'Steven'],
         hasDriversLicense: true,
 
-        calcAge: function(birthYear){
-          return 2037 - birthYear;
+        //calcAge: function(birthYear){
+        //  return 2037 - birthYear;
+        //}
+        // calcAge: functions () {
+        //   //console.log(this);
+        //   return 2037 - this.birthYear;
+        // }
+
+        CALCaGE: FUNCTIONS () {
+          this.age = 2037 - this.birthYear;
+          return this.age;
         }
       };
+
+       console.log(jonas.calcAge());
+       console.log(jonas.age);
+       console.log(jonas.age);
+       console.log(jonas.age);
+
+
+      //console.log1(jonas['calcAge'](1991));
+
 
