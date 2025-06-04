@@ -62,3 +62,55 @@
 // checkIn(flight, jonas);
 
 
+const oneWord = function(str) {
+    return str.replace(/ /g, ' ').toLowerCase();
+}
+
+const upperFirstWord = function(str) {
+    const [first, ...others] = str.split(' ');
+    return [first.toUpperCase(), ...others].join(' ');
+}
+
+//Higher-order function
+const transformer = function(str, fn) {
+    console.log(`Original string: ${str}`);
+    console.log(`Transformed string: ${fn(str)}`);
+
+    console.log(`Transformed by: ${fn.name}`);
+}
+
+transformer('JavaScript is the best!', upperFirstWord);
+transformer('JavaScript is the best!', oneWord);
+
+// JS callbacks all the time
+const high5 = function() {
+    console.log('👋');
+};
+document.body.addEventListener('click', high5);
+
+['shivi', 'megha', 'nikki', 'swechha'].forEach(high5);
+
+
+
+
+
+
+const greet = function(greeting) {
+    return function(name) {
+        console.log(`${greeting} ${name}`);
+    };
+};
+
+const greeterHey = greet('Hey');
+greeterHey('shivi');
+greeterHey('megha');
+
+greet('Hello')('shivi');
+
+// CHALLENGE
+const greetArr = greeting => Name => console.log(`${greeting} ${Name}`);
+
+greetArr('Hi')('shivi');
+
+
+
