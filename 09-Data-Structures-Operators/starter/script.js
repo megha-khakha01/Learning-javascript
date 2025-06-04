@@ -81,6 +81,12 @@ const restaurant = {
   order: function(starterIndex, mainIndex) {
     return [this.starterMenu[starterIndex], this.mainMenu[mainIndex]];
   },
+};
+const {Name, openingHours, categories} = restaurant;
+console.log(Name, openingHours, categories);
+
+const {Name : resturantName, openingHours : hours, categories}: tags = restaurant;
+console.log(resturantName,hours , tags);
 
   orderDelivery: function({starterIndex = 1, mainIndex = 0, time = '20:00', address,}) {
     console.log(`Order received! ${this.starterMenu[starterIndex]} and ${this.mainMenu[mainIndex]} will be delivered to ${address} at ${time}`);
@@ -123,9 +129,8 @@ console.log(a, b);
 // NESTED OBJECTS
 const {fri: {open: o, close: c}} = openingHours;
 console.log(o, c);
-*/
-/////////////////////////////////////////////////////
-/*
+
+
 const restaurant = {
   Name: 'Classico Italiano',
   location: 'Via Angelo Tavanti 23, Firenze, Italy',
@@ -133,7 +138,6 @@ const restaurant = {
   starterMenu: ['Focaccia', 'Bruschetta', 'Garlic Bread', 'Caprese Salad'],
   mainMenu: ['Pizza', 'Pasta', 'Risotto'],
 };
-*/
 
 /*
 const arr = [7, 8, 9];
