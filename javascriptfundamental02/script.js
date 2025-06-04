@@ -242,4 +242,84 @@ checkWinner(scoreDolphins, scoreKoalas);*/
       // }
 
 
+      //  Iteration: The For Loop  //
+
+      // console.log('Lifting weights repetition 1');
+      // console.log('Lifting weights repetition 2');
+      // console.log('Lifting weights repetition 3');
+      // console.log('Lifting weights repetition 4');
+      // console.log('Lifting weights repetition 5');
+      // console.log('Lifting weights repetition 6');
+      // console.log('Lifting weights repetition 7');
+      // console.log('Lifting weights repetition 8');
+      // console.log('Lifting weights repetition 9');
+      // console.log('Lifting weights repetition 10');
+
+
+      //for loop keeps running while condition is TRUE
+      // for (let rep = 1; rep <= 30; rep++) {
+      //    console.log('Lifting weights repetition ${rep}');
+      // }
+
+
+      //  Looping Arrays. Breaking And Continuing  //
+
+      // const jonasArray = [
+      //   'Jonas',
+      //   'Schmedtman',
+      //   2037 - 1991,
+      //   'teacher',
+      //   ['Michael', 'Peter', 'Steven']
+      // ];
+
+      // console.log(jonas[0])
+      // console.log(jonas[1])
+      // ***
+      // console.log(jonas[4])
+      // jonas[5] does NOT exist
+
+      // for (let i = 0; i < jonasArray.length; i++) {
+      //   // Reading from jonas array
+      //   console.log(jonas[i], typeof jonas[i]);
+
+      //   // Filling types aaray
+      //   //types[i] = typeof jonas[i];
+
+      //   types[i] = typeof jonas[i];
+      // }
+
+      // console.log(types);
+
+      // const years = [1991, 2007, 1996, 2020];
+      // const ages = [];
+
+      // for ( let i = 0; i < years.length; i++) {
+      //   ages.push(2037 - years[i]);
+      // }
+      // console.log(ages);
+
+      // //continue and break
+      // console.log('---ONLY STRING---')
+      // for (let i = 0; i < jonas.length; i++) {
+      //   if (typeof jonas [i] !== 'string') continue;
+
+      //   console.log(jonas[i] , typeof jonas[i]);
+      // }
+
+
+
+
+
+
+
+
+      
+
+
+
+
+
+  
+
+
 
