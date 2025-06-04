@@ -164,34 +164,46 @@ checkWinner(scoreDolphins, scoreKoalas);*/
 
 
       // Object Methods  //
-      const shivi = {
-        firstName: 'Shivi',
-        lastName: 'Megha',
-        birthYear: 1991,
-        job: 'teacher',
-        friends: ['Michael', 'Pete', 'Steven'],
-        hasDriversLicense: true,
+      // const shivi = {
+      //   firstName: 'Shivi',
+      //   lastName: 'Megha',
+      //   birthYear: 1991,
+      //   job: 'teacher',
+      //   friends: ['Michael', 'Pete', 'Steven'],
+      //   hasDriversLicense: true,
 
-        //calcAge: function(birthYear){
-        //  return 2037 - birthYear;
-        //}
-        // calcAge: functions () {
-        //   //console.log(this);
-        //   return 2037 - this.birthYear;
-        // }
+      //   //calcAge: function(birthYear){
+      //   //  return 2037 - birthYear;
+      //   //}
+      //   // calcAge: functions () {
+      //   //   //console.log(this);
+      //   //   return 2037 - this.birthYear;
+      //   // }
 
-        CALCaGE: FUNCTIONS () {
-          this.age = 2037 - this.birthYear;
-          return this.age;
-        }
-      };
+      //   CALCaGE: FUNCTIONS () {
+      //     this.age = 2037 - this.birthYear;
+      //     return this.age;
+      //   },
 
-       console.log(jonas.calcAge());
-       console.log(jonas.age);
-       console.log(jonas.age);
-       console.log(jonas.age);
+      //   getSummary: function(){
+      //     return'${this.firstName} is a ${this.calcAge{}} - year old ${jonas.job}, and he has ${this. hasDriversLicense ? 'a' : 'no' } driver's license.'
+      //   }
+      // };
+
+      //  console.log(jonas.calcAge());
+      //  console.log(jonas.age);
+      //  console.log(jonas.age);
+      //  console.log(jonas.age);
 
 
-      //console.log1(jonas['calcAge'](1991));
+      // //console.log1(jonas['calcAge'](1991));
 
 
+      // //Challenge
+      // // "Jonas is a 46-year old teacher , and he has a driver's license"
+
+      // console.log(jonas.getSummary());
+
+
+      //  Coding Challenge  //
+      
