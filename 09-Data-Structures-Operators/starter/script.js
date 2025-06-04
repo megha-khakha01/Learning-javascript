@@ -269,7 +269,7 @@
 // restaurant.orderPizza('mushrooms');
 
 
-// // Short Circuiting (&& and ||)
+// Short Circuiting 
 
 // console.log('---- OR ----');
 // // Use ANY data type, return ANY data type, short-circuiting
@@ -294,56 +294,50 @@
 // console.log('Hello' && 23 && null && 'shivi');
 
 
-//////////////////////////////////////////////////////////
-/*
-// The Nullish Coalescing Operator // --> correct
-restaurant.numGuests = 0;
-const guests = restaurant.numGuests || 10;
-console.log(guests);
+// The Nullish Coalescing Operator 
+// restaurant.numGuests = 0;
+// const guests = restaurant.numGuests || 10;
+// console.log(guests);
 
-// Nullish: null and undefined (NOT 0 or '')
-const guestCorrect = restaurant.numGuests ?? 10;
-console.log(guestCorrect);
-*/
+// // Nullish: null and undefined (NOT 0 or '')
+// const guestCorrect = restaurant.numGuests ?? 10;
+// console.log(guestCorrect);
 
-////////////////////////////////////////////////////////////
-/*
-// Logical Assignment Operators // --->correct
-const rest1 = {
-  name: 'Capri',
-  // numGuests: 20,
-  numGuests: 0,
-};
 
-const rest2 = {
-  name: 'La Piazza',
-  owner: 'Giovanni Rossi',
-};
+// // Logical Assignment Operators // --->correct
+// const rest1 = {
+//   name: 'Capri',
+//   // numGuests: 20,
+//   numGuests: 0,
+// };
 
-// OR assignment operator
-// rest1.numGuests = rest1.numGuests || 10;
-// rest2.numGuests = rest2.numGuests || 10;
-// rest1.numGuests ||= 10;
-// rest2.numGuests ||= 10;
+// const rest2 = {
+//   name: 'La Piazza',
+//   owner: 'Giovanni Rossi',
+// };
 
-// nullish assignment operator (null or undefined)
-rest1.numGuests ??= 10;
-rest2.numGuests ??= 10;
+// // OR assignment operator
+// // rest1.numGuests = rest1.numGuests || 10;
+// // rest2.numGuests = rest2.numGuests || 10;
+// // rest1.numGuests ||= 10;
+// // rest2.numGuests ||= 10;
 
-// AND assignment operator
-// rest1.owner = rest1.owner && '<ANONYMOUS>';
-// rest2.owner = rest2.owner && '<ANONYMOUS>';
-rest1.owner &&= '<ANONYMOUS>';
-rest2.owner &&= '<ANONYMOUS>';
+// // nullish assignment operator (null or undefined)
+// rest1.numGuests ??= 10;
+// rest2.numGuests ??= 10;
 
-console.log(rest1);
-console.log(rest2);
-*/
+// // AND assignment operator
+// // rest1.owner = rest1.owner && '<ANONYMOUS>';
+// // rest2.owner = rest2.owner && '<ANONYMOUS>';
+// rest1.owner &&= '<ANONYMOUS>';
+// rest2.owner &&= '<ANONYMOUS>';
 
-/////////////////////////////////////////////////////////////////////////
+// console.log(rest1);
+// console.log(rest2);
 
-//---------------CODING CHALLENGE #1------------------------//
-/*  
+
+//Coding challenge
+
 // 1.
 const [players1, players2] = game.players; // -->error
 console.log(players1, players2);
@@ -378,7 +372,7 @@ printGoals(...game.scored);
 // 7.
 team1 < team2 && console.log('Team 1 is more likely to win');
 team1 > team2 && console.log('Team 2 is more likely to win');
-*/
+
 
 /////////////////////////////////////////////////////////////////////////
 /*
