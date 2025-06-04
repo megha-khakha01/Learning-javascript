@@ -161,3 +161,19 @@ checkWinner(543, 111);*/
 scoreKoalas = calcAverage(23 , 34 , 27);
 console.log(scoreDolphins, scoreKoalas);
 checkWinner(scoreDolphins, scoreKoalas);*/
+
+
+      // Object Methods  //
+      const shivi = {
+        firstName: 'Shivi',
+        lastName: 'Megha',
+        birthYear: 1991,
+        job: 'teacher',
+        friends: ['Michael', 'Pete', 'Steven'],
+        hasDriversLicense: true,
+
+        calcAge: function(birthYear){
+          return 2037 - birthYear;
+        }
+      };
+
