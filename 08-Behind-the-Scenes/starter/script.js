@@ -31,25 +31,15 @@ function calcAge(birthYear) {
     return age;
 }
 
-const firstName = 'Jonas';
-calcAge(1991);
-
-//console.log(age);
-
-//printage());
-
-
-
-
 console.log(me);
 console.log(job);
 console.log(year);
 
-var me = 'Adii';
-let job = 'being  cute';
+var me = 'Shivi';
+let job = 'teacher';
 const year = 1991;
 
-// functions 
+// Functions 
 console.log(addDecl(2,3));
 //console.log(addExpr(2.3));
 console.log(addArrow);
@@ -58,7 +48,7 @@ console.log(addArrow);
 function addDec(a,b) {
     return a + b;
 }
- const addExpr = function (a,b) {
+ var addExpr = function (a,b) {
     return a+b;
  };
 
@@ -68,7 +58,7 @@ function addDec(a,b) {
 
  //Example 
  console.log(undefined);
-    if (!numProducts) 
+    if (!numProducts)  delectShoppingCart();
         var numProuducts = 10;
 
     function deleteShoppingCart() {
