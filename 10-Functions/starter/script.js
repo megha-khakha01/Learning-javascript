@@ -30,7 +30,7 @@
 
 
 // const flight = 'LH234';
-// const Anshu = {
+// const jonas = {
 //     name: 'Jonas Schmedtmann',
 //     passport: 1234567890,
 // }
