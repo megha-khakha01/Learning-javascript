@@ -211,3 +211,23 @@
 // };
 // //checkDogs([3, 5, 2 , 12, 7] , [4 , 1, 15 ,8 ,3]);
 // checkDogs ([9,16,6,8,3], [10,5,6,1,4]);
+
+
+const movementsUSD = movements.map(mov => mov * eurToUsd);
+
+console.log(movements);
+console.log(movementsUSD);
+
+const movementsUSDfor = [];
+for (const mov of movements) movementsUSDfor.push(mov * eurTOUsd);
+console.log (movementsUSDfor);
+
+ const movementsDescriptions = movements.map(mov , i, arr) => {
+  'Movement ${i + 1}: You ${mov > 0?} ${Math.abs(mov)}';
+     if (movement > 0) {
+    return 'Movement ${i + 1}:You deposited ${mov}';
+  }else {
+    return 'Movement ${i + 1}: You withdrew ${Math.abs(mov)}';
+}
+ };
+console.log(movementsDescriptions);
