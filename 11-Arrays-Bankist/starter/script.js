@@ -366,12 +366,12 @@
 
 
 
-const firstWithdrawl = movements.find(mov => mov < 0);
-console.log(movements);
-console.log(firstWithdrawl);
+// const firstWithdrawl = movements.find(mov => mov < 0);
+// console.log(movements);
+// console.log(firstWithdrawl);
 
-console.log(accounts);
+// console.log(accounts);
 
-const  account = accounts.find(acc => acc.owner === 'Jessica Davis');
-console.log(account);
+// const  account = accounts.find(acc => acc.owner === 'Jessica Davis');
+// console.log(account);
 
