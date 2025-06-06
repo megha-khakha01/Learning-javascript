@@ -86,9 +86,9 @@
 // };
 //     displayMovements(account1.movement);
 
-const calcDisplayBalance = function (movements){ const balance = movents.reduce((acc , mov) => acc + mov, 0);
-labelBalance.textContent = '${balance} EUR'};
-calcDisplayBalance(account1.movements);
+// const calcDisplayBalance = function (movements){ const balance = movents.reduce((acc , mov) => acc + mov, 0);
+// labelBalance.textContent = '${balance} EUR'};
+// calcDisplayBalance(account1.movements);
 
 // const createUsernames = function (accs) {
 //   accs.forEach(function(acc) {
@@ -257,7 +257,7 @@ calcDisplayBalance(account1.movements);
 // const withdraw = movements.filter(mov => mov < 0);
 // console.log(withdrawals);
 
-console.log(movements);
+// console.log(movements);
 
 // accumulator -> SNOWBALL
 // const balance = movements.reduce(function (acc , cur , i , arr){
