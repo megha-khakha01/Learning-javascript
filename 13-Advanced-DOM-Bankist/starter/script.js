@@ -69,7 +69,7 @@
 
 // Styles Attributes and Classes
 
-/ Styles
+ Styles
 message.style.backgroundColor = '#37383d';
 message.style.width = '120%';
 
@@ -113,4 +113,4 @@ logo.classList.toggle('c');
 logo.classList.contains('c'); // not includes
 
 // Don't use
-logo.clasName = 'Anshu';
+logo.clasName = 'shivi';
