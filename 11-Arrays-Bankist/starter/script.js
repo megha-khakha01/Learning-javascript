@@ -1,6 +1,6 @@
 'use strict';
 
-const { useCallback } = require("react");
+//const { useCallback } = require("react");
 
 // /////////////////////////////////////////////////
 // /////////////////////////////////////////////////
@@ -175,34 +175,34 @@ const { useCallback } = require("react");
 //   }
 // });
 
-btnLoan.addEvenListner('click', function (e) {
-  e.preventDefault();
-
-  const amount = Number(inputLoanAmount.value);
-const receiverAcc = accounts.find (
-  acc => acc.username === inputTransferTo.value
-);
-inputTransferAmount.value = InputTransferTo.value = '';
-
-if (
-  amount > 0 &&
-  receiver &&
-  currentAccount.balance >= amount &&
-  receiverAcc?.username != currentAccount.username
-){
-  // Doing the transfer
-  currentAccount.movements.push(-amount);
-  receiverAcc.movements.push(amount);
-
-  //Update UI
-  updateUI(currentAccount);
-}
-
-  }
-});
-
-// btnClose.addEventListner('click , function (e) {
+// btnLoan.addEvenListner('click', function (e) {
 //   e.preventDefault();
+
+//   const amount = Number(inputLoanAmount.value);
+// const receiverAcc = accounts.find (
+//   acc => acc.username === inputTransferTo.value
+// );
+// inputTransferAmount.value = InputTransferTo.value = '';
+
+// if (
+//   amount > 0 &&
+//   receiver &&
+//   currentAccount.balance >= amount &&
+//   receiverAcc?.username != currentAccount.username
+// ){
+//   // Doing the transfer
+//   currentAccount.movements.push(-amount);
+//   receiverAcc.movements.push(amount);
+
+//   //Update UI
+//   updateUI(currentAccount);
+// }
+
+//   }
+// });
+
+// // btnClose.addEventListner('click , function (e) {
+// //   e.preventDefault();
 
 //   if(
 //     inputCloserUsername.value === currentAccount.username && 
@@ -477,26 +477,26 @@ if (
 // const  account = accounts.find(acc => acc.owner === 'Jessica Davis');
 // console.log(account);
 
-console.log(movements);
+// console.log(movements);
 
 
-//EQUALITY
-console.log(movements.includes(-130));
+// //EQUALITY
+// console.log(movements.includes(-130));
 
-// SOME: CONDITION
-console.log(movements.some(mov => mov === -130));
+// // SOME: CONDITION
+// console.log(movements.some(mov => mov === -130));
 
-const anyDeposists = movements.some(mov => mov > 0);
-console.log(anyDeposists);
+// const anyDeposists = movements.some(mov => mov > 0);
+// console.log(anyDeposists);
 
-// EVERY
-console.log(movements.every(mov => mov >0));
-console.log(account4.movements.every(mov => > 0));
+// // EVERY
+// console.log(movements.every(mov => mov >0));
+// console.log(account4.movements.every(mov => > 0));
 
-// Seperate callBack
-const deposit = mov => mov > 0;
-console.log(movements.some(deposit));
-console.log(movements.every(deposit));
-console.log(movements.filter(deposit));
+// // Seperate callBack
+// const deposit = mov => mov > 0;
+// console.log(movements.some(deposit));
+// console.log(movements.every(deposit));
+// console.log(movements.filter(deposit));
 
 
