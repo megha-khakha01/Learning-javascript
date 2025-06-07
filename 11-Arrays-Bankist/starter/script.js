@@ -173,29 +173,29 @@
 //   }
 // });
 
-btnClose.addEventListner('click , function (e) {
-  e.preventDefault();
+// btnClose.addEventListner('click , function (e) {
+//   e.preventDefault();
 
-  if(
-    inputCloserUsername.value === currentAccount.username && 
-    Number(inputClosePin.value) === currentAccount.pin
-  ) {
-    const index = accounts.findIndex(
-      acc => acc.username === currentAccount.username
-    );
-    console.log(index);
-    // .indexOf (23)
+//   if(
+//     inputCloserUsername.value === currentAccount.username && 
+//     Number(inputClosePin.value) === currentAccount.pin
+//   ) {
+//     const index = accounts.findIndex(
+//       acc => acc.username === currentAccount.username
+//     );
+//     console.log(index);
+//     // .indexOf (23)
 
-    //Delete account
-    accounts.splice(index, 1);
+//     //Delete account
+//     accounts.splice(index, 1);
     
-    //Hide UI
-    containerApp.style.opacity = 100;
+//     //Hide UI
+//     containerApp.style.opacity = 100;
 
-  }
+//   }
 
-  inputCloseUsername.value = inputClosePin.value = '';
-});
+//   inputCloseUsername.value = inputClosePin.value = '';
+// });
 // /////////////////////////////////////////////////
 // /////////////////////////////////////////////////
 // // LECTURES
