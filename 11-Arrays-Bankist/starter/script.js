@@ -520,29 +520,29 @@
 // console.log(overalBalance2);
 
 // Strings
-const owner = ['Jonas', 'Zach', 'Adam', 'Martha'];
-console.log(owner.sort());
-console.log(owners);
+// const owner = ['Jonas', 'Zach', 'Adam', 'Martha'];
+// console.log(owner.sort());
+// console.log(owners);
 
-//Numbers
-console.log(movements);
+// //Numbers
+// console.log(movements);
 
 
-// return < 0, A, B(keep order)
-// return > 0, B, A(switch order)
+// // return < 0, A, B(keep order)
+// // return > 0, B, A(switch order)
 
-//Ascending
+// //Ascending
+// // movements.sort((a, b) => {
+// //   if (a > b) return 1;
+// //   if (b > a) return -1;
+// // });
+// movements.sort((a,b) => a-b);
+// console.log(movements);
+
+// //Descending
 // movements.sort((a, b) => {
 //   if (a > b) return 1;
 //   if (b > a) return -1;
 // });
-movements.sort((a,b) => a-b);
-console.log(movements);
 
-//Descending
-movements.sort((a, b) => {
-  if (a > b) return 1;
-  if (b > a) return -1;
-});
-
-console.log(movements);
+// console.log(movements);
