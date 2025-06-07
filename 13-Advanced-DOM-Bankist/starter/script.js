@@ -70,6 +70,27 @@
 //     if(window.scrollY > initialCoords.top) navigator.userAgentclassList.add('sticky');
 //     else navigator.classList.remove('sticky');  
 // })
+// Sticky navigation: Intersection Observer API
+
+// const obsCallback = function (entries, observer){
+// entries.forEach(entry =>{
+//     console.log(entry);
+// });
+// };
+
+// const obsOptions ={
+//     root: null,
+//     threshold: 0.1
+// };
+
+// const observer = new IntersectionObserver
+// (obsCallback, obsOptions);
+// observer.observe(section1);
+
+// const header = document.querySelector('.header');
+
+// const headerObserver = new IntersectionObserver()
+
 // ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 //Selecting elements
@@ -235,3 +256,4 @@
 // [...h1.parentElement.children].forEach(function (eg) {
 //     if (el !==h1) el.style.transform = 'scale(0.5)';
 // });
+
