@@ -31,31 +31,31 @@
 // });
 
 //tabbed component
-const tabs = document.querySelectorAll('.operations_tab');
-const tabsContainer = document.querySelector('.operations_tab_container');
-const tabsContent = document.querySelectorAll('operations_content');
+// const tabs = document.querySelectorAll('.operations_tab');
+// const tabsContainer = document.querySelector('.operations_tab_container');
+// const tabsContent = document.querySelectorAll('operations_content');
 
-tabsContainer.addEventListener('click', function (e) {
-    const clicked = e.target.closest('.operations_tab');
-    console.log(clicked);
+// tabsContainer.addEventListener('click', function (e) {
+//     const clicked = e.target.closest('.operations_tab');
+//     console.log(clicked);
 
-    //guard clause
-    if (!clicked) return;
-    // remove active classes
-tabs.forEach(t => t.classList.remove
-        ('operations_tab--active'));
-        tabsContent.forEach(c => c.classList.remove('operations_content--active'));
+//     //guard clause
+//     if (!clicked) return;
+//     // remove active classes
+// tabs.forEach(t => t.classList.remove
+//         ('operations_tab--active'));
+//         tabsContent.forEach(c => c.classList.remove('operations_content--active'));
 
-    // active tab
+//     // active tab
 
     
-    clicked.classList.add('operations_tab_active');
+//     clicked.classList.add('operations_tab_active');
 
-    // activate content area
-    console.log (clicked.dataset.tab);
-    document.querySelector('.operations_content--${clicked.dataset.tab}')
-    .classList.add('operations_content_active');
-});
+//     // activate content area
+//     console.log (clicked.dataset.tab);
+//     document.querySelector('.operations_content--${clicked.dataset.tab}')
+//     .classList.add('operations_content_active');
+// });
 
 // ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
