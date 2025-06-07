@@ -857,6 +857,7 @@
 // Creating Dates
 
 // Create a date
+/*
 const now = new Date();
 console.log(now);
 
@@ -869,7 +870,7 @@ console.log(new Date(2037, 10, 31));
 
 console.log(new Date(0));
 console.log(new Date(3 * 24 * 60 * 60 * 1000));
-
+*/
 
 // Working with dates
 const future = new Date(2037, 10, 19, 15, 23);
