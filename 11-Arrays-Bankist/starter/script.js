@@ -122,6 +122,36 @@
 // };
 // createUsernames(accounts);
 
+
+// Event handler
+let currentAccount;
+
+btnLogin.addEventListener('click', function (e) {
+  //Prevent form from submitting
+  e.preventDefault();
+
+currentAccount = accounts.find(acc => acc.username === inputLogUsername.value);
+console.log(currentAccount);
+
+if (currentAccount?.pin === Number (inputLoginPin.value)){
+  //Display UI and message
+  labelWelcome.textContent = 'Welcome back , ${ currentAccount.owner.split('')[0]
+}';
+containerApp.style.opacity = 100;
+
+//clear input fields
+
+inputLoginUsername.value = inputLoginPin.value = '';
+inputLoginPin.blur();
+//display movements
+displayMovements(currentAccount.movements);
+//display balance
+calcDisplayBalance(currentAccount.movements);
+//displace summary
+calcDisplaySummary(currentAccount.movements);
+
+});
+
 // /////////////////////////////////////////////////
 // /////////////////////////////////////////////////
 // // LECTURES
@@ -374,4 +404,7 @@
 
 // const  account = accounts.find(acc => acc.owner === 'Jessica Davis');
 // console.log(account);
+
+
+//  LOGIN FEATURE   //
 
