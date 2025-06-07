@@ -57,19 +57,19 @@
 //     .classList.add('operations_content_active');
 // });
 // passing "argument" into handler
-navigator.addEventListner ('mouseover' , handleHover.bind(0.5));
-navigator.addEventListner('mouseout', handleHover.bind(1));
+// navigator.addEventListner ('mouseover' , handleHover.bind(0.5));
+// navigator.addEventListner('mouseout', handleHover.bind(1));
 
-//sticky navigation
-const initialCoords = section1.getBoundingClientRect();
-console.log(initialCoords);
+// //sticky navigation
+// const initialCoords = section1.getBoundingClientRect();
+// console.log(initialCoords);
 
-window.addEventListner('scroll', function () {
-    console.log(window.scrollY);
+// window.addEventListner('scroll', function () {
+//     console.log(window.scrollY);
 
-    if(window.scrollY > initialCoords.top) navigator.userAgentclassList.add('sticky');
-    else navigator.classList.remove('sticky');  
-})
+//     if(window.scrollY > initialCoords.top) navigator.userAgentclassList.add('sticky');
+//     else navigator.classList.remove('sticky');  
+// })
 // ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 //Selecting elements
