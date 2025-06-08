@@ -27,3 +27,29 @@
 // console.log(shivi instanceof Person);
 
 
+// Prototypes
+console.log(personalbar.prototype);
+
+personalbar.prototype.calcAge = function () {
+    console.log(2037 - this.birthYear);
+};
+
+shivi.calcAge();
+megha.calcAge();
+
+console.log(shivi._proto_);
+console.log(shivi._proto_===personalbar.prototype);
+
+console.log(personalbar.prototype.isPrototypeof(shivi));
+console.log(personalbar.prototype.isPrototypeof(matilda));
+console.log(personalbar.prototype.isPrototypeof(Person));
+
+//.prototypeOfLinkedObjects
+
+Person.prototype.species = 'Homo Sapiens';
+console.log(shivi.species, megha.species);
+
+console.log(sivi.hasOwnProperty ('firstName'));
+console.log(sivi.hasOwnProperty ('species'));
+
+
