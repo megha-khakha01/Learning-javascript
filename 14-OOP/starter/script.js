@@ -52,25 +52,25 @@
 // console.log(sivi.hasOwnProperty ('firstName'));
 // console.log(sivi.hasOwnProperty ('species'));
 
-console.log(shivi._proto_);
-//Object.prototype (top of prototype chain)
-console.log(shivi._proto_._proto_);
-console.log(shivi._proto_._proto_._proto_);
+// console.log(shivi._proto_);
+// //Object.prototype (top of prototype chain)
+// console.log(shivi._proto_._proto_);
+// console.log(shivi._proto_._proto_._proto_);
 
-console.dir(personalbar.prototype.constructor);
+// console.dir(personalbar.prototype.constructor);
 
-const arr = (3, 6, 4, 5, 6, 9, 3); // new Array === []
-console.log(arr._proto_);
-console.log(arr._proto_=== Array.prototype);
+// const arr = (3, 6, 4, 5, 6, 9, 3); // new Array === []
+// console.log(arr._proto_);
+// console.log(arr._proto_=== Array.prototype);
 
-console.log(arr._proto_._proto);
+// console.log(arr._proto_._proto);
 
-Array.prototype.unique = function () {
-    return [...new Set(this)];
-};
+// Array.prototype.unique = function () {
+//     return [...new Set(this)];
+// };
 
-console.log(arr.unique());
+// console.log(arr.unique());
 
-const h1 = document.querySelector('h1');
-console.dir(x => x + 1);
+// const h1 = document.querySelector('h1');
+// console.dir(x => x + 1);
 
