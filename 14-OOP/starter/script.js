@@ -264,33 +264,33 @@
 
 
 // Static method
-static hey(){
-    console.log(' Hey there');
-}
-}
-class StudentCl extends PersonCl {
-    // constructor(fulName, birthYear, course) {
-    // Always needs to happens first!
-    // super(fulName, birthYear);
-    // this.course = course;
+// static hey(){
+//     console.log(' Hey there');
+// }
+// }
+// class StudentCl extends PersonCl {
+//     // constructor(fulName, birthYear, course) {
+//     // Always needs to happens first!
+//     // super(fulName, birthYear);
+//     // this.course = course;
     
-}
+// }
 
-introduce(){
-    console.log('My name is ${this.firstName} and I study ${this.course}');
-}
-calcAge(){
-    console.log(
-        'I'm ${
-            2037 - this.birthYear
-        } years old, but as a student I feel more like $
-        {
-            2037 - this.birthYear + 10
-        }'
-};
-    }
-} 
+// introduce(){
+//     console.log('My name is ${this.firstName} and I study ${this.course}');
+// }
+// calcAge(){
+//     console.log(
+//         'I'm ${
+//             2037 - this.birthYear
+//         } years old, but as a student I feel more like $
+//         {
+//             2037 - this.birthYear + 10
+//         }'
+// };
+//     }
+// } 
 
-const martha = new StudentCl('Martha Jones', 2012, 'Computer Science');
-martha.introduce();
-martha.calcAge();
+// const martha = new StudentCl('Martha Jones', 2012, 'Computer Science');
+// martha.introduce();
+// martha.calcAge();
