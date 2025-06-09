@@ -11,9 +11,14 @@ const inputDuration = document.querySelector('.form__input--duration');
 const inputCadence = document.querySelector('.form__input--cadence');
 const inputElevation = document.querySelector('.form__input--elevation');
 
+//   Using the Geolocation API
 if(navigator.geolocation)
     navigator.geolocation.getCurrentPosition(function(position) {
-console.log(positio);
-}, function() {
-    alert('Could not get your position')
-})
+function(position){
+    const {latitude} = position.coords;
+    const {longitude} = position.coords;
+    console.log(https://www.google.pt/maps/@{latitude},${longitude}');
+},
+function() {
+    alert ('Could not get your position');
+},
