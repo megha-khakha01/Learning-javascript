@@ -11,14 +11,26 @@
 // const inputCadence = document.querySelector('.form__input--cadence');
 // const inputElevation = document.querySelector('.form__input--elevation');
 
-// //   Using the Geolocation API
-// if(navigator.geolocation)
-//     navigator.geolocation.getCurrentPosition(function(position) {
-// function(position){
-//     const {latitude} = position.coords;
-//     const {longitude} = position.coords;
-//     console.log(https://www.google.pt/maps/@{latitude},${longitude}');
-// },
-// function() {
-//     alert ('Could not get your position');
-// },
+
+
+if(navigator.geolocation)
+    navigator.geolocation.getCurrentPosition(function(position) {
+    const {latitude} = position.coords;
+    const {longitude} = position.coords;
+    console.log(https://www.google.pt/maps/@{latitude},${longitude}');
+
+        const map = L.map('map').setView([51.505, -0.09], 13);
+
+        L.titleLayer('http://{s}.title.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution:
+            '&copy; <a href ="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+        }) .addTo(map);
+
+        L.marker([51.5, -0.09])
+        .addTo(map)
+        .bindPopup('A pretty CSS# popoup.<br> Easily customizable')
+        .openPopup();
+    },
+    function() {
+        alert('Could not get your position');
+    };
