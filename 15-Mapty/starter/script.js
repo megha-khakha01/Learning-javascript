@@ -86,7 +86,7 @@ form.addEventListener('submit',function(e) {
 
     // If workout cycling, create cycling object
     if(type === 'cycling'){
-        const cadence = +inputCadence.value;
+        const elevation = +inputElevation.value;
     }
 
     // Add new object to workout array
