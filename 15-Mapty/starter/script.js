@@ -73,11 +73,21 @@ form.addEventListener('submit',function(e) {
     
     // Get data from form
 
+    const type = inputType.value;
+    const distance = +inputDistance.value;
+    const duration = +inputDuration.value;
+
     // Check if data is valid
 
     // If workout running, create running object
+    if(type === 'running') {
+        const cadence = +inputCadence.value;
+    }
 
     // If workout cycling, create cycling object
+    if(type === 'cycling'){
+        const cadence = +inputCadence.value;
+    }
 
     // Add new object to workout array
 
