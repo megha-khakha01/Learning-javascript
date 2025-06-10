@@ -130,10 +130,9 @@ class aPP {
 
     // Hide form + Clear input fields
     inputDistance.value = inputDurstion = inputCadence = inputElevation ='';
-
-
-    .marker(lat, lng)
-       .addTo(map)
+renderWorkoutMarker(workout){
+        L.marker(lat, lng)
+       .addTo(this.#map)
        .bindPopup(
         L.popup({
             maxWidth: 250,
@@ -143,8 +142,12 @@ class aPP {
             className: '$(type)-popup',
         })
        )
-       .setPopupContent('Workout')
+       .setPopupContent(workout.distance)
        .openPopup();
+    }
+
+
+
 
 
     //Display marker
