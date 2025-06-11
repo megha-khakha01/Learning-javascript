@@ -13,7 +13,7 @@ class Workout {
     this.duration = duration; // in min
   }
 
-  _setDescription() {
+  _setDes() {
     // prettier-ignore
     const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 
