@@ -310,9 +310,6 @@ wait(1)
 Promise.resolve('abc').then(x => console.log(x));
 Promise.reject(new Error('Problem!')).catch(x => console.error(x));
 
-
-//----------------------------------------------------------------------------------------------------------------//
-
 /*
 // PROMISIFYING THE GEOLOCATION API
 const getPosition = function () {
