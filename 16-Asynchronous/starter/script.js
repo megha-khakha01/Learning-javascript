@@ -73,7 +73,7 @@ getCountryData('germany');
 
 
 
-/*
+
 // WELCOME TO CaALLBACK HELL
 
 const getCountryAndNeighbour = function (country) {
