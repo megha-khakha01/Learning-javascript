@@ -223,7 +223,7 @@ btn.addEventListener('click', function () {
 
 
 
-        CODING CHALLENGE
+      //  CODING CHALLENGE
 
 const whereAmI = function (lat, lng) {
   fetch(`https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${lat}&longitude=${lng}`)
@@ -674,7 +674,7 @@ const loadNPause = async function () {
 };
 // loadNPause();
 
-// PART 2
+// Part 2
 const loadAll = async function (imgArr) {
   try {
     const imgs = imgArr.map(async img => await createImage(img));
