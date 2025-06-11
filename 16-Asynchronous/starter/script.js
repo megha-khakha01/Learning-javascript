@@ -460,7 +460,6 @@ console.log('FIRST');
 // }
 
 
-//---------------------------------------------------------------------------------------------------------------//
 
 // RETURNING VALUES FROM ASYNC FUNCTIONS 
 const getPosition = function () {
