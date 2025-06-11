@@ -257,7 +257,7 @@ console.log('Test end');
 
 
 
-/*
+
 // BUILDING A SIMPLE PROMISE
 const lotteryPromise = new Promise(function (resolve, reject) {
   console.log('Lotter draw is happening 🔮');
