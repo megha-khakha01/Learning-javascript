@@ -36,7 +36,7 @@ const getJSON = function (url, errorMsg = 'Something went wrong') {
   });
 };
 
- /*
+ 
 // Our First AJAX Call: XMLHttpRequest
 
 const getCountryData = function (country) {
