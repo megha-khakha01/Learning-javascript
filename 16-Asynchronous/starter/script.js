@@ -544,7 +544,7 @@ const get3Countries = async function (c1, c2, c3) {
 };
 get3Countries('portugal', 'canada', 'tanzania');
 
-//----------------------------------------------------------------------------------------------------------------//
+
 
 // Other Promise Combinators: race, allSettled and any
 // Promise.race
