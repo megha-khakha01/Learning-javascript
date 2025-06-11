@@ -24,11 +24,15 @@ class aPP {
     workout = [];          
 
 
-    constructor(){
-       this._getPosition();
-        form.addEventListener('submit', this._newWorkout.bind(this));
-        inputType.addEventListener('change', this_toggleElevationField);
+    constructor(coords, distance, duration){
+       //this.date = ...
+       //this.id =...
+        this.coords = coords; // [lat, lng]
+        this.distance = distance; // in km
+        this.duration = duration; // in min
     }
+
+    
 
     _getPosition(){
         if (navigator.geolocation)
@@ -130,8 +134,26 @@ class aPP {
 
     // Hide form + Clear input fields
     inputDistance.value = inputDurstion = inputCadence = inputElevation ='';
-renderWorkoutMarker(workout){
-        L.marker(lat, lng)
+
+
+
+
+    //Display marker
+        
+
+    // Render workout on lists
+
+    this._renderWorkout(workout)
+
+    // HIde form + clear input fields
+
+    inputType.addEventListener('change',function () {
+        inputElevation.('.form_row') .classList.toggle('form_row--hidden')
+        inputCadence.closest('.form_row').classList.toogle('form_row--hidden')
+    });
+
+    _renderWorkoutMarker(workout){
+     L.marker(lat, lng)
        .addTo(this.#map)
        .bindPopup(
         L.popup({
@@ -146,21 +168,29 @@ renderWorkoutMarker(workout){
        .openPopup();
     }
 
+    _renderWorkout(workout){
+        const html = '
+         <!-- <li class="workout workout--${workout.name}" data-id="${workout.id}">
+          <h2 class="workout__title">Running on April 14</h2>
+          <div class="workout__details">
+            <span class="workout__icon">${workout.name === 'running'? '🏃‍♂️': '🚴'}</span>
+            <span class="workout__value">${workout.distance}</span>
+            <span class="workout__unit">km</span>
+          </div>
+          <div class="workout__details">
+            <span class="workout__icon">⏱</span>
+            <span class="workout__value">${workout.duration}</span>
+            <span class="workout__unit">min</span>
+          </div>
+        ';
+
+    }
 
 
 
+    const app = new App();
 
-    //Display marker
-        
 
-    // Render workout on lists
-
-    // HIde form + clear input fields
-
-    inputType.addEventListener('change',function () {
-        inputElevation.('.form_row') .classList.toggle('form_row--hidden')
-        inputCadence.closest('.form_row').classList.toogle('form_row--hidden')
-    });
 
 
 
