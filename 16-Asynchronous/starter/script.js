@@ -266,7 +266,7 @@ console.log('Test end');
 
 
 
-// BUILDING A SIMPLE PROMISE
+// Building a Simple Promise
 const lotteryPromise = new Promise(function (resolve, reject) {
   console.log('Lotter draw is happening 🔮');
   setTimeout(function () {
