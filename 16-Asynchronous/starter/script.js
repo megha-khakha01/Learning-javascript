@@ -82,7 +82,7 @@ getCountryData('germany');
 
 
 
-// WELCOME TO CaALLBACK HELL
+// Welcome to callback hell
 
 const getCountryAndNeighbour = function (country) {
   // AJAX call country 1
