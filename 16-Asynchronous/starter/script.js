@@ -401,8 +401,6 @@ createImage('img/img-1.jpg')
   .catch(err => console.error(err)); 
 
 
-//---------------------------------------------------------------------------------------------------------------//
-
 /*
 // Consuming Promises with Async/Await
 
