@@ -654,7 +654,7 @@ let currentImg;
 //   })
 //   .catch(err => console.error(err));
 
-// PART 1
+// Part 1
 const loadNPause = async function () {
   try {
     // Load image 1
