@@ -352,7 +352,7 @@ const whereAmI = function () {
 btn.addEventListener('click', whereAmI);
 
 
-//--------------------------------------------CODING CHALLENGE #02------------------------------------------------//
+//--------------------------------------------CODING CHALLENGE 
 /*
 const wait = function (seconds) {
   return new Promise(function (resolve) {
