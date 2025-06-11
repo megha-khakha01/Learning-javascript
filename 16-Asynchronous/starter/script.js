@@ -469,7 +469,7 @@ console.log('FIRST');
 
 
 
-// RETURNING VALUES FROM ASYNC FUNCTIONS 
+// Returning Values From Async Functions 
 const getPosition = function () {
   return new Promise(function (resolve, reject) {
     navigator.geolocation.getCurrentPosition(resolve, reject);
