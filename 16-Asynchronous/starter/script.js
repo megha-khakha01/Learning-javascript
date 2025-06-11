@@ -43,14 +43,13 @@ const renderCountry = function (data, className = '') {
 };
 
 
-
- 
 // Our First AJAX Call: XMLHttpRequest
 
 const getCountryData = function (country) {
   const request = new XMLHttpRequest();
   request.open('GET', `https://restcountries.com/v2/name/${country}`);
   request.send();
+  // console.log (request.responseText);
 
   request.addEventListener('load', function () {
     const [data] = JSON.parse(this.responseText);
