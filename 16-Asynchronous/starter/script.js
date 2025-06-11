@@ -598,7 +598,7 @@ Promise.any([
 
 
 
-//-------------------------------------------CODING CHALLENGE #03
+CODING CHALLENGE #03
 
 const wait = function (seconds) {
   return new Promise(function (resolve) {
