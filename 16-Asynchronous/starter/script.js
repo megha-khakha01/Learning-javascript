@@ -1,5 +1,6 @@
 'use strict';
-
+// NEW COUNTRIES API URL (use instead of the URL shown in video):
+// https://restcountries.com/v2/name/portugal
 
 const btn = document.querySelector('.btn-country');
 const countriesContainer = document.querySelector('.countries');
