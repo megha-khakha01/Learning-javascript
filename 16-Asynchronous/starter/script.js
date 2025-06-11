@@ -516,7 +516,7 @@ console.log('1: Will get location');
   console.log('3: Finished getting location'); 
 })();
 
-//----------------------------------------------------------------------------------------------------------------//
+
 
 // RUNING PROMISES IN PARALLEL
 const get3Countries = async function (c1, c2, c3) {
