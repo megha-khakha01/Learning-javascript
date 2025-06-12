@@ -1,4 +1,4 @@
-/*switch (day) {
+switch (day) {
   case 'monday': // day === 'monday'
     console.log('Plan course structure');
     console.log('Go to coding meetup');
@@ -35,7 +35,7 @@ if (day === 'monday') {
 } else {
   console.log('Not a valid day!');
 }
-*/
+
 
 //statements and expressions
 /*
