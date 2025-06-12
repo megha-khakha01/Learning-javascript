@@ -53,28 +53,28 @@ const secretnumber = Math.trunc(Math.random()*20) +1;
 //             document.querySelector('.message') .textContent = 'You lost the game!';
 //          }
 //     // when guess is too low
-    }else if (guess < secretnumber){
-        if ( score > 1){
-        document.querySelector('.message').textContext =  'too low!';
-        score--;
-        document.querySelector('.score').textContent = score;
-        } else{
-            documet.querySelector('.message').textContent = 'You lost the game!';
-            document.querySelector('.score'.textContent=0);
-        }
-    }
-});
-      // Coding challenge //+
-document.querySelector('.again').addEventListener('click', function ( {
-    score = 20;
-    secretNumber = Math.trunc (Math.random() *20) + 1;
+//     }else if (guess < secretnumber){
+//         if ( score > 1){
+//         document.querySelector('.message').textContext =  'too low!';
+//         score--;
+//         document.querySelector('.score').textContent = score;
+//         } else{
+//             documet.querySelector('.message').textContent = 'You lost the game!';
+//             document.querySelector('.score'.textContent=0);
+//         }
+//     }
+// });
+//       // Coding challenge //+
+// document.querySelector('.again').addEventListener('click', function ( {
+//     score = 20;
+//     secretNumber = Math.trunc (Math.random() *20) + 1;
 
-    document.querySelector('.message').textContent = 'Start guessing....';
-    document.querySelector('.score').textContent = 'score';
-     document.querySelector('.number').textContent = '?';
-      document.querySelector('.guess').textContent = '';
-       document.querySelector('.body').textContent = '#222';
-        document.query=elector('.number').textContent = '15rem';
-});
+//     document.querySelector('.message').textContent = 'Start guessing....';
+//     document.querySelector('.score').textContent = 'score';
+//      document.querySelector('.number').textContent = '?';
+//       document.querySelector('.guess').textContent = '';
+//        document.querySelector('.body').textContent = '#222';
+//         document.query=elector('.number').textContent = '15rem';
+// });
 
    
