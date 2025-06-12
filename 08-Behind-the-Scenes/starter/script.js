@@ -1,35 +1,35 @@
-// 'use strict';
+'use strict';
 
-// function calcAge(birthYear) {
-//     const age = 2037 - birthYear;
+function calcAge(birthYear) {
+    const age = 2037 - birthYear;
 
-//     function printAge() {
-//         const output = '${firstName}. you are ${age},
-//         born in ${birthYear}' ;
-//         console.log(output);
+    function printAge() {
+        const output = '${firstName}. you are ${age},
+        born in ${birthYear}' ;
+        console.log(output);
         
-//         if (birthYear >= 1981 && birthYear <= 1996) {
-//             var millenlial = true ;
-//             // creating new variable with same name as outer scope's variables
-//             ConstFirstname = 'Shivi'
-//             // REASSIGNING OUTER SCOPE'S VARIABLE
-//             output ='NEW OUTPUT!';
-//             const str = 'Oh, and you're a millenial, $ 
-//             {firstName}';
-//             console.log(str);
-//             function add(a , b){
-//                 return a + b;
-//             }
-//         }
-//         //console.log(str);
-//         console.log(millenlial);
-//     // console.log(add(2 , 3));
-//     console.log(output);
-//     }
-//     printAAge();
+        if (birthYear >= 1981 && birthYear <= 1996) {
+            var millenlial = true ;
+            // creating new variable with same name as outer scope's variables
+            ConstFirstname = 'Shivi'
+            // REASSIGNING OUTER SCOPE'S VARIABLE
+            output ='NEW OUTPUT!';
+            const str = 'Oh, and you're a millenial, $ 
+            {firstName}';
+            console.log(str);
+            function add(a , b){
+                return a + b;
+            }
+        }
+        //console.log(str);
+        console.log(millenlial);
+    // console.log(add(2 , 3));
+    console.log(output);
+    }
+    printAAge();
 
-//     return age;
-// }
+    return age;
+}
 
 // console.log(me);
 // console.log(job);
