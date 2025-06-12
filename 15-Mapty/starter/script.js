@@ -44,57 +44,57 @@
 //   }
 // }
 
-// class Cycling extends Workout {
-//   type = 'cycling';
-//   constructor(coords, distance, duration, elevationGain) {
-//     super(coords, distance, duration);
-//     this.elevationGain = elevationGain;
-//     // this.type = 'cycling';
-//     this.calcSpeed();
-//     this._setDescription();
-//   }
+class Cycling extends Workout {
+  type = 'cycling';
+  constructor(coords, distance, duration, elevationGain) {
+    super(coords, distance, duration);
+    this.elevationGain = elevationGain;
+    // this.type = 'cycling';
+    this.calcSpeed();
+    this._setDescription();
+  }
 
-//   calcSpeed() {
-//     // km/h
-//     this.speed = this.distance / (this.duration / 60);
-//     return this.speed;
-//   }
-// }
+  calcSpeed() {
+    // km/h
+    this.speed = this.distance / (this.duration / 60);
+    return this.speed;
+  }
+}
 
-// // const run1 = new Running([39, -12], 5.2, 24, 178);
-// // const cycling1 = new Cycling([39, -12], 27, 95, 523);
-// // console.log(run1, cycling1);
+// const run1 = new Running([39, -12], 5.2, 24, 178);
+// const cycling1 = new Cycling([39, -12], 27, 95, 523);
+// console.log(run1, cycling1);
 
 // ///////////////////////////////////////
-// // APPLICATION ARCHITECTURE
-// const form = document.querySelector('.form');
-// const containerWorkouts = document.querySelector('.workouts');
-// const inputType = document.querySelector('.form__input--type');
-// const inputDistance = document.querySelector('.form__input--distance');
-// const inputDuration = document.querySelector('.form__input--duration');
-// const inputCadence = document.querySelector('.form__input--cadence');
-// const inputElevation = document.querySelector('.form__input--elevation');
+// APPLICATION ARCHITECTURE
+const form = document.querySelector('.form');
+const containerWorkouts = document.querySelector('.workouts');
+const inputType = document.querySelector('.form__input--type');
+const inputDistance = document.querySelector('.form__input--distance');
+const inputDuration = document.querySelector('.form__input--duration');
+const inputCadence = document.querySelector('.form__input--cadence');
+const inputElevation = document.querySelector('.form__input--elevation');
 
-// class App {
-//   #map;
-//   #mapZoomLevel = 13;
-//   #mapEvent;
-//   #workouts = [];
+class App {
+  #map;
+  #mapZoomLevel = 13;
+  #mapEvent;
+  #workouts = [];
 
-//   constructor() {
-//     // Get user's position
-//     this._getPosition();
+  constructor() {
+    // Get user's position
+    this._getPosition();
 
-//     // Get data from local storage
-//     this._getLocalStorage();
+    // Get data from local storage
+    this._getLocalStorage();
 
-//     // Attach event handlers
-//     form.addEventListener('submit', this._newWorkout.bind(this));
-//     inputType.addEventListener('change', this._toggleElevationField);
-//     containerWorkouts.addEventListener('click', this._moveToPopup.bind(this));
-//   }
+    // Attach event handlers
+    form.addEventListener('submit', this._newWorkout.bind(this));
+    inputType.addEventListener('change', this._toggleElevationField);
+    containerWorkouts.addEventListener('click', this._moveToPopup.bind(this));
+  }
 
-//   _getPosition() {
+ // _getPosition() {
 //     if (navigator.geolocation)
 //       navigator.geolocation.getCurrentPosition(
 //         this._loadMap.bind(this),
