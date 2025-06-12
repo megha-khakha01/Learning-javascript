@@ -1,7 +1,7 @@
 //  Activating Strict mode
 
 
-/*
+
 let hasDriveringLicence = false;
  const passTest = true;
 
@@ -10,20 +10,20 @@ if (hasDriveringLicence) console.log('I can drive : D');
 
 const interface = 'Audio';
 const private = 534;
-*/
+
 
 
 
 // Functions
 
 
-/*
+
 function logger(){
 console.log('My name is shivi');
  }
-/*
+
 //calling / running / invoking function
- /*logger();
+ logger();
  logger();
  logger();
 
