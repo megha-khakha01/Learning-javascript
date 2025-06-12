@@ -3,48 +3,48 @@
 ///////////////////////////////////////
 // Modal window
 
-// const modal = document.querySelector('.modal');
-// const overlay = document.querySelector('.overlay');
-// const btnCloseModal = document.querySelector('.btn--close-modal');
-// const btnsOpenModal = document.querySelectorAll('.btn--show-modal');
+const modal = document.querySelector('.modal');
+const overlay = document.querySelector('.overlay');
+const btnCloseModal = document.querySelector('.btn--close-modal');
+const btnsOpenModal = document.querySelectorAll('.btn--show-modal');
 
-// const openModal = function (e) {
-//   e.preventDefault();
-//   modal.classList.remove('hidden');
-//   overlay.classList.remove('hidden');
-// };
+const openModal = function (e) {
+  e.preventDefault();
+  modal.classList.remove('hidden');
+  overlay.classList.remove('hidden');
+};
 
-// const closeModal = function () {
-//   modal.classList.add('hidden');
-//   overlay.classList.add('hidden');
-// };
+const closeModal = function () {
+  modal.classList.add('hidden');
+  overlay.classList.add('hidden');
+};
 
-// btnCloseModal.forEach(btn => btn.addEventListener('click', openModal));
+btnCloseModal.forEach(btn => btn.addEventListener('click', openModal));
 
-// btnCloseModal.addEventListener('click', closeModal);
-// overlay.addEventListener('click', closeModal);
+btnCloseModal.addEventListener('click', closeModal);
+overlay.addEventListener('click', closeModal);
 
-// document.addEventListener('keydown', function (e) {
-//   if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
-//     closeModal();
-//   }
-// });
+document.addEventListener('keydown', function (e) {
+  if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
+    closeModal();
+  }
+});
 
 //tabbed component
-// const tabs = document.querySelectorAll('.operations_tab');
-// const tabsContainer = document.querySelector('.operations_tab_container');
-// const tabsContent = document.querySelectorAll('operations_content');
+const tabs = document.querySelectorAll('.operations_tab');
+const tabsContainer = document.querySelector('.operations_tab_container');
+const tabsContent = document.querySelectorAll('operations_content');
 
-// tabsContainer.addEventListener('click', function (e) {
-//     const clicked = e.target.closest('.operations_tab');
-//     console.log(clicked);
+tabsContainer.addEventListener('click', function (e) {
+    const clicked = e.target.closest('.operations_tab');
+    console.log(clicked);
 
-//     //guard clause
-//     if (!clicked) return;
-//     // remove active classes
-// tabs.forEach(t => t.classList.remove
-//         ('operations_tab--active'));
-//         tabsContent.forEach(c => c.classList.remove('operations_content--active'));
+    //guard clause
+    if (!clicked) return;
+    // remove active classes
+tabs.forEach(t => t.classList.remove
+        ('operations_tab--active'));
+        tabsContent.forEach(c => c.classList.remove('operations_content--active'));
 
 //     // active tab
 
