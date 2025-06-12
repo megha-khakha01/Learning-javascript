@@ -12,11 +12,7 @@ const interface = 'Audio';
 const private = 534;
 
 
-
-
 // Functions
-
-
 
 function logger(){
 console.log('My name is shivi');
@@ -37,7 +33,7 @@ function fruitProcessor(apples, oranges) {
  console.log(applejuice);
 
  const appleOrangeJuice = fruitProcessor(2,4);
-console.log(appleOrangeJuice);*/
+console.log(appleOrangeJuice);
 
 
 
